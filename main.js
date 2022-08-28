@@ -1,5 +1,4 @@
 let logo = document.getElementById("profile")
-
 let fullName = document.getElementById("left")
 
 // Fetch Data.
