@@ -1,3 +1,17 @@
+let logo = document.getElementById("profile")
+
+
+
+
+
+
+
+
+
+
+
+
+
 fetch('https://randomuser.me/api/')
   .then((res) => {
     return res.json()
@@ -7,6 +21,19 @@ fetch('https://randomuser.me/api/')
     let fname = data.results[0].name.first
     let lname = data.results[0].name.last
     let title = data.results[0].name.title
+    
+    let proLogo= data.results[0].picture.large
+    
+    // DOM 
+    
+    
+    
+   let img =document.createElement("img")
+   img.src=proLogo
+   img.className="logo"
+   logo.append(img)
+   console.log (img)
+    
 
 
     // PAN GEN
