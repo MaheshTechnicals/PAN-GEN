@@ -42,10 +42,11 @@ fetch('https://randomuser.me/api/')
 
       let display = document.createElement("p")
       display.innerText = title + " " + fname + " " + lname
+      display.className="fullName"
       fullName.append(display)
 
       let Pan = document.createElement("p")
-      Pan.innerText = `PAN: ${panNum} `
+      Pan.innerHTML = `PAN: <span>${panNum}</span> `
       display.appendChild(Pan)
 
     }
