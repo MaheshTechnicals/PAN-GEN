@@ -55,6 +55,7 @@ fetch('https://randomuser.me/api/')
     
     let btn = document.createElement("button")
     btn.innerText="Generate New"
+    btn.className="btn"
    full.appendChild(btn)
    
    btn.addEventListener("click", ()=>{
