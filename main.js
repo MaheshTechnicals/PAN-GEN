@@ -1,5 +1,8 @@
 let logo = document.getElementById("profile")
 let fullName = document.getElementById("left")
+let full = document.getElementById("get")
+
+
 
 // Fetch Data.
 
@@ -46,5 +49,19 @@ fetch('https://randomuser.me/api/')
       display.appendChild(Pan)
 
     }
+    
+    
+    // Button Added.
+    
+    let btn = document.createElement("button")
+    btn.innerText="Generate New"
+   full.appendChild(btn)
+   
+   btn.addEventListener("click", ()=>{
+     location.reload()
+   })
+    
+    
+    
     myPan()
   })
